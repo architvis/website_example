@@ -1,0 +1,114 @@
+/* https://www.w3schools.com/w3css/w3css_fonts.asp */
+h1{font-size:64px;}
+h2{font-size:48px;}
+h3{font-size:36px;}
+h4{font-size:24px;}
+h5{font-size:20px;}
+h6{font-size:18px;}
+
+nav.navbar{
+    width: 100%;
+    background-color:#333;
+    color: white;
+    overflow: hidden;
+    height: auto;
+}
+
+nav.navbar ul{
+    vertical-align: baseline;
+}
+
+nav.navbar ul li a, nav.navbar ul li a:visited{
+    vertical-align: baseline;
+    padding: 10px 17px;
+    color: white;
+}
+
+nav.navbar ul li{
+    display: inline-flex;
+    list-style-type: none;
+    float: left; 
+    height: auto;
+    vertical-align: baseline;
+    font-size: 20px;
+}
+
+
+nav.navbar ul li:hover{
+    background-color: #000;
+}
+
+nav.navbar ul li.active{
+    background-color: #000;
+}
+
+nav.navbar ul li a:link, nav.navbar ul i a:visited, nav.navbar ul i a:hover, nav.navbar ul i a:active {
+    text-decoration: none; color: white;
+  }
+.navbar-brand{
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #4CAF50;  /*got color from https://www.w3schools.com/css/css_navbar.asp */ 
+}
+
+.content{
+    width: 600px;
+    margin: auto;
+    background-color: white;
+}
+
+.content .intro{
+    width: 100%;
+    text-align: center;
+}
+
+.content .section{
+    width: 100%;
+    padding-top: 13px;
+}
+
+.content .card{
+    width: 100%;
+}
+
+
+/* Modified Code for shadow from https://css-tricks.com/almanac/properties/b/box-shadow/ */
+.content .card
+{
+    -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+    -moz-box-shadow:0 0 10px rgba(0,0,0,0.4);
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    margin: 15px 0px;
+}
+
+
+
+.content .card .title{
+    box-sizing: border-box;
+    text-align: center;
+    width: 600px;   /* content width - .card padding*/
+    padding: 12px;
+    border-bottom: 1px solid #000;
+}
+
+.content .card p{
+    padding: 12px;
+}
+
+.content .card .img-with-text{
+    clear: both;
+    display: inline-flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content .card .img-with-text img{
+    width: 50%;
+    float: left;
+}
+
+.content .card .img-with-text .text{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 7px;
+    float: right;
+}
