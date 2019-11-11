@@ -14,4 +14,8 @@ app.get('/page2', function(req,res){
     res.sendFile(__dirname + "/public/pages/page2.html");
 });
 
+app.get('/login', function(req,res){
+    res.sendFile(__dirname + "/public/pages/login.html");
+});
+
 app.listen(3000, ()=>console.log('Note taking app is running on port 3000'));
