@@ -7,12 +7,12 @@ h5{font-size:20px;}
 h6{font-size:18px;}
 
 @media only screen and (max-width: 600px) {
-    .content, .content .intro,.content .card .title {
+    section {
       width: 100%!important;
     }
   }
 
-nav.navbar{
+nav{
     width: 100%;
     background-color:#333;
     color: white;
@@ -20,17 +20,17 @@ nav.navbar{
     height: auto;
 }
 
-nav.navbar ul{
+nav ul{
     vertical-align: baseline;
 }
 
-nav.navbar ul li a, nav.navbar ul li a:visited{
+nav ul li a, nav ul li a:visited{
     vertical-align: baseline;
     padding: 10px 17px;
     color: white;
 }
 
-nav.navbar ul li{
+nav ul li{
     display: inline-flex;
     list-style-type: none;
     float: left; 
@@ -40,97 +40,66 @@ nav.navbar ul li{
 }
 
 
-nav.navbar ul li:hover{
+nav ul li:hover{
     background-color: #000;
 }
 
-nav.navbar ul li.active{
+/* nav ul li a:active{
     background-color: #000;
-}
+} */
 
-nav.navbar ul li.login{
-    float: right;
-    background-color: #000000;
-}
-
-nav.navbar ul li a:link, nav.navbar ul i a:visited, nav.navbar ul i a:hover, nav.navbar ul i a:active {
+nav ul li a:link, nav ul i a:visited, nav ul i a:hover, nav ul i a:active {
     text-decoration: none; color: white;
   }
 
-.navbar-brand{
+nav ul li:first-child{
     font-family: 'Archivo Black', sans-serif;
     background-color: #4CAF50;  /*got color from https://www.w3schools.com/css/css_navbar.asp */ 
 }
 
-.content{
-    width: 600px;
+section{
+    width: 600px;   /* content width - article padding*/
     margin: auto;
+}
+
+section header{
+    padding: 12px 7px;
+}
+
+article{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    float: left;
+    padding: 10px;
     background-color: white;
-}
 
-.content .intro{
-    width: 100%;
-    text-align: center;
-}
-
-.content .section{
-    width: 100%;
-    padding-top: 13px;
-}
-
-.content .card{
-    width: 100%;
-}
-
-
-/* Modified Code for shadow from https://css-tricks.com/almanac/properties/b/box-shadow/ */
-.content .card
-{
+    /* Modified Code for shadow from https://css-tricks.com/almanac/properties/b/box-shadow/ */
     -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
     -moz-box-shadow:0 0 10px rgba(0,0,0,0.4);
     box-shadow:0 0 10px rgba(0,0,0,0.4);
-    margin: 15px 0px;
 }
 
-
-
-.content .card .title{
+article header{
     box-sizing: border-box;
     text-align: center;
-    width: 600px;   /* content width - .card padding*/
     padding: 12px;
     border-bottom: 1px solid #000;
 }
 
-.content .card p{
-    padding: 12px;
+article p{
+    margin: 12px;
 }
 
-.content .card .img-with-text{
-    clear: both;
-    display: inline-flex;
-    overflow: hidden;
-    width: 100%;
-}
-
-.content .card .img-with-text img{
+article img{
     width: 50%;
     float: left;
-}
-
-.content .card .img-with-text .text{
-    box-sizing: border-box;
-    width: 50%;
-    padding: 7px;
-    float: right;
-}
-
-.login-container{
-    margin: 50px 0px;
+    clear: both;
+    padding-right: 10px;
 }
 
 /* Form is a modified version from an old project */
-form.login{
+form{
     position: relative;
     z-index: 1;
     background: #FFFFFF;
@@ -141,7 +110,7 @@ form.login{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-form.login input{
+form input{
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -153,7 +122,7 @@ form.login input{
     font-size: 14px;
 }
 
-form.login button{
+form button{
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -168,6 +137,6 @@ form.login button{
     cursor: pointer;
 }
 
-form.login button:hover,form.login button:active,form.login button:focus {
+form button:hover,form.login button:active,form.login button:focus {
     background: #43A047;
   }
